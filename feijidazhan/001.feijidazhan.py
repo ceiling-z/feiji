@@ -4,6 +4,9 @@ from time import *
 import pygame
 from pygame.constants import *
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 
 #玩家类
 class HeroPlane(object):
